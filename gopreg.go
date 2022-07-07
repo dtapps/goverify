@@ -57,7 +57,7 @@ func ChinaUnicomNumber(number string) bool {
 // https://www.qqzeng.com/tongji.html
 // 电信：133 149 153 173 174 177 180 181 189 190 191 193 199
 func ChinaTelecomNumber(number string) bool {
-	regular := "^[1](([3][3])|([4][9])|([5][3)|([7][3-4,7])||([8][0-1,9])|([9][0-1,3,9]))[0-9]{8}$"
+	regular := "^[1](([3][3])|([4][9])|([5][3])|([7][3-4,7])||([8][0-1,9])|([9][0-1,3,9]))[0-9]{8}$"
 	reg := regexp.MustCompile(regular)
 	return reg.MatchString(number)
 }
