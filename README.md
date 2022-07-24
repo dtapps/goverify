@@ -2,7 +2,7 @@
 <a href="https://www.dtapp.net/">Golang Verify</a>
 </h1>
 
-📦 Golang 手机号验证
+📦 Golang 验证
 
 [comment]: <> (go)
 [![godoc](https://pkg.go.dev/badge/github.com/dtapps/goverify?status.svg)](https://pkg.go.dev/github.com/dtapps/goverify)
