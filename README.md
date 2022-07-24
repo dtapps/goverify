@@ -16,12 +16,6 @@
 go get -v -u github.com/dtapps/goverify
 ```
 
-#### 导入
-
-```go
-import "github.com/dtapps/goverify"
-```
-
 #### 使用
 
 ```go
@@ -32,8 +26,24 @@ import (
 	"testing"
 )
 
+// TestChinaMobile 验证手机号码
 func TestChinaMobile(t *testing.T) {
 	t.Log(goverify.ChinaMobile("13800138000"))
+}
+
+// TestChinaMobileNumber 验证中国移动手机号码
+func TestChinaMobileNumber(t *testing.T) {
+	t.Log(goverify.ChinaMobileNumber("13800138000"))
+}
+
+// TestChinaUnicomNumber 验证中国联通手机号码
+func TestChinaUnicomNumber(t *testing.T) {
+	t.Log(goverify.ChinaUnicomNumber("13800138000"))
+}
+
+// TestChinaTelecomNumber 验证中国电信手机号码
+func TestChinaTelecomNumber(t *testing.T) {
+	t.Log(goverify.ChinaTelecomNumber("13800138000"))
 }
 ```
 
